@@ -1,0 +1,45 @@
+.login-wrapper {
+    font-family: 'Rajdhani';
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-outline {
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	vertical-align: middle;
+	zoom: 1;
+	color: #000000;
+	padding: 10px 25px;
+	border: 2px solid #000000;
+	border-radius: 20px;
+	font-size: 20px;
+  font-weight: 600;
+	background: rgba(255,255,255,0.95);
+  margin: 10px 30px 20px 30px;
+  width: 140px;
+}
+.button-outline:hover {
+  background: rgba(0,0,0,1.0);
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.footer-login {
+  text-align: left;
+  background-color: transparent;
+  color: white;
+  font-size: normal;
+  position: absolute;
+  margin-left: 20px;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-login a {
+  color: white;
+}

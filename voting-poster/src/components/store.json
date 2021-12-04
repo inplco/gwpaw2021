@@ -1,0 +1,47 @@
+[
+    {
+        "id": "1",
+        "name": "Barcelona",
+        "value": "barcelona"
+    },
+    {
+        "id": "2",
+        "name": "Real Madrid",
+        "value": "realMadrid"
+    },
+    {
+        "id": "3",
+        "name": "Juventus",
+        "value": "juventus"
+    },
+    {
+        "id": "4",
+        "name": "Manchester United",
+        "value": "manchesterUnited"
+    },
+    {
+        "id": "5",
+        "name": "Liverpool",
+        "value": "liverpool"
+    },
+    {
+        "id": "6",
+        "name": "Arsenal",
+        "value": "arsenal"
+    },
+    {
+        "id": "7",
+        "name": "Bayern FC",
+        "value": "bayern"
+    },
+    {
+        "id": "8",
+        "name": "Dortmund FC",
+        "value": "dortmund"
+    },
+    {
+        "id": "9",
+        "name": "Hannover 96",
+        "value": "hannover"
+    }
+]

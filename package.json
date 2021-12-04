@@ -1,0 +1,26 @@
+{
+  "name": "voting-poster",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "ably": "^1.2.2",
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "react-router-dom": "^6.0.0-beta.8"
+  },
+  "devDependencies": {
+    "web-vitals": "^2.1.2"
+  },
+  "scripts": {
+    "client-install": "npm install --prefix voting-poster",
+    "start": "node server.js",
+    "start-client": "npm start --prefix voting-poster",
+    "dev": "concurrently \"npm start\" \"npm run start-client\"",
+    "heroku-postbuild": "npm install -prefix voting-poster && npm run build --prefix voting-poster"
+  },
+  "author": "",
+  "license": "ISC"
+}
