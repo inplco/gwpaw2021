@@ -1,14 +1,24 @@
 import React, { Component } from "react";
 import * as Ably from "ably";
 import { Doughnut } from "react-chartjs-2";
+import '../../App.css';
+
 /*
 import {Chart, ArcElement} from 'chart.js';
 Chart.register(ArcElement);
 */
+
 let realTime = null;
 let myVotingChannel = null;
-class Dashboard extends Component {
 
+class Dashboard extends Component {
+  constructor(){
+    super();
+    this.state = {
+      votes: require("../init.json")
+    };
+  }
+  /*
   state = {
     votes: {
       barcelona: 0,
@@ -16,17 +26,17 @@ class Dashboard extends Component {
       juventus: 0,
     },
   };
-
+  */
   componentDidMount() {
     realTime = new Ably.Realtime({ authUrl: "/subscribe" });
     realTime.connection.once("connected", () => {
       // create the channel object
       myVotingChannel = realTime.channels.get("voting-poster");
-      myVotingChannel.subscribe("vote", (msg) => {
+      myVotingChannel.subscribe("vote", (trigger) => {
         this.setState({
           votes: {
             ...this.state.votes,
-            [msg.data]: this.state.votes[msg.data] + 1,
+            [trigger.data]: this.state.votes[trigger.data] + 1,
           },
         });
       });
@@ -38,26 +48,22 @@ class Dashboard extends Component {
   }
   render() {
     const data = {
-      labels: ["Barcelona", "Real Madrid", "Juventus"],
+      labels: this.state.votes,
       datasets: [
         {
           barPercentage: 1,
-          backgroundColor: ["#FF6384", "#4BC0C0", "#FFCE56"],
-          data: [
-            this.state.votes.barcelona,
-            this.state.votes.realMadrid,
-            this.state.votes.juventus,
-          ],
+          data: this.state.votes,
         },
       ],
     };
-
+    /*
     const options = {
       title: {
         display: true,
         text: "Voting Dashboard",
         fontSize: 25,
-        fontColor: "#CB0F33",
+        fontColor: "#FFFFFF",
+        fontFamily: 'Rajdhani',
       },
       layout: {
         padding: {
@@ -66,6 +72,8 @@ class Dashboard extends Component {
       }
     };
     return <Doughnut className="graph" data={data} options={options} />;
+    */
+    return null;
   }
 }
 

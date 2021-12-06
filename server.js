@@ -26,6 +26,12 @@ app.get("/subscribe", (request, response) => {
   realTimeAuth(tokenParams, response);
 });
 
+app.use("/login", (request, response) => {
+  response.send({
+    token: 'test123'
+  });
+});
+
 const realTimeAuth = (tokenParams, response) => {
   realtime.auth.createTokenRequest(tokenParams, function (err, tokenRequest) {
     if (err) {
@@ -39,6 +45,8 @@ const realTimeAuth = (tokenParams, response) => {
   });
 };
 
+app.listen(8080, () => console.log('Login API is listening on port 8080'));
+
 const listener = app.listen(process.env.PORT, () => {
-  console.log("App is listening on port " + listener.address().port);
+  console.log("Realtime feature is listening on port " + listener.address().port);
 });

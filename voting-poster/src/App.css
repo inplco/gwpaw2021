@@ -4,7 +4,7 @@
   background-color: #000000;
   text-align: center;
   background-repeat: no-repeat;
-  background-image: url('./logo.svg');
+  background-image: url('./logo.jpeg');
   background-size: contain;
   background-position: center;
 }
@@ -17,6 +17,10 @@
   background-size: 200px;
   width: 200px;
   margin-left: 100px;
+}
+
+.logout {
+  margin-left: 1000px;
 }
 
 .raj {
@@ -37,6 +41,11 @@ h5 {
 
 p {
   font-size: 20px;
+}
+
+a {
+  font-size: 20px;
+  color: #FFFFFF;
 }
 
 h6 {
@@ -101,13 +110,20 @@ h6 {
   background-color: transparent;
   color: white;
   font-size: normal;
-  position: absolute;
+  position: sticky;
   margin-left: 20px;
+  margin-bottom: 0px;
   bottom: 0;
   width: 100%;
 }
 
 .footer a {
+  font-size: 15px;
+  color: white;
+}
+
+.footer p {
+  font-size: 15px;
   color: white;
 }
 
