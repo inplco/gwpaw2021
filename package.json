@@ -19,7 +19,7 @@
     "start": "node server.js",
     "start-client": "npm start --prefix voting-poster",
     "dev": "concurrently \"npm start\" \"npm run start-client\"",
-    "heroku-postbuild": "npm install -prefix voting-poster && npm run build --prefix voting-poster"
+    "build": "npm install -prefix voting-poster && npm run build --prefix voting-poster"
   },
   "author": "",
   "license": "ISC"

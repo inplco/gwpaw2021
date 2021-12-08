@@ -10,7 +10,7 @@ const realtime = Ably.Realtime({
   key: process.env.ABLY_API_KEY,
 });
 
-app.use(express.static(path.join(__dirname, 'voting-poster/build')));
+app.use(express.static(path.join(__dirname, 'voting-poster')));
 
 app.get("/publish", (request, response) => {
   const tokenParams = {
