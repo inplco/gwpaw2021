@@ -4,7 +4,7 @@ import './login.css';
 import '../../App.css';
 
 async function loginUser(credentials) {
- return fetch('/login-auth', {
+ return fetch('http://localhost:8080/login-auth', {
    method: 'POST',
    headers: {
      'Content-Type': 'application/json'
@@ -30,9 +30,9 @@ export default function Login({ setToken }) {
       <div className="app-logo">
       </div>
       <div className="login-wrapper" >
-        <h1 style={{ marginTop: -10, fontFamily: 'Rajdhani' }}>GWPAW 2021</h1>
-        <h1 style={{ marginTop: -10, fontFamily: 'Rajdhani' }}>VOTING PAGE</h1>
-        <p style={{ marginTop: -20 }}>DEC 13-17 2021, HANNOVER</p>
+        <h1 style={{ marginTop: -30, fontFamily: 'Rajdhani' }}>GWPAW 2021</h1>
+        <h2 style={{ marginTop: -40, fontFamily: 'Rajdhani' }}>VOTING PAGE</h2>
+        <p style={{ marginTop: -30 }}>DEC 13-17 2021, HANNOVER</p>
         <form onSubmit={handleSubmit}>
           <label>
             <h5 style={{ fontSize:24, marginTop: 10 }}>USE REGISTRATION TOKEN TO ACCESS THE VOTING PAGE</h5>
@@ -46,8 +46,13 @@ export default function Login({ setToken }) {
           <br></br><br></br>
         </form>
       </div>
-      <div className="footer-login">
-        <p style={{ fontSize: 15 }}>Powered by <a style={{ fontSize: 15 }} href="http://inpl.one" target = "_">Interplanetary Company</a><sup>TM</sup></p>
+      <div className="footer" style={{ position:'fixed' }}>
+        <div>
+          <img className="thumbnailgit" src="/gwpaw2021/github.png"/><a href="https://github.com/inplco/gwpaw2021" target="_">github.com/inplco/gwpaw2021</a>
+        </div>
+        <div style={{ marginTop:-13 }}>
+          <p>Powered by <a href="http://inpl.one" target = "_">Interplanetary Company</a><sup>TM</sup></p>
+        </div>
       </div>
       </div>
     </div>
