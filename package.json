@@ -1,26 +1,26 @@
 {
-  "name": "voting-poster",
+  "name": "login-client",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "#",
   "dependencies": {
     "ably": "^1.2.2",
-    "concurrently": "^5.3.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "react-router-dom": "^6.0.0-beta.8"
-  },
-  "devDependencies": {
-    "web-vitals": "^2.1.2"
+    "web-vitals": "^2.1.2",
+    "body-parser": "^1.19.0",
+    "express-fileupload": "^1.2.1",
+    "knex": "^0.95.14"
   },
   "scripts": {
     "client-install": "npm install --prefix voting-poster",
-    "start": "node server.js",
+    "ably": "node ablyserver.js",
+    "login": "node loginauth.js",
     "start-client": "npm start --prefix voting-poster",
     "dev": "concurrently \"npm start\" \"npm run start-client\"",
-    "build": "npm install -prefix voting-poster && npm run build --prefix voting-poster"
+    "heroku-postbuild":"npm install -prefix voting-poster && npm run build --prefix voting-poster"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "INPLCO",
+  "license": "Apache 2.0"
 }
+

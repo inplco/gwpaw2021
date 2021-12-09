@@ -8,3 +8,24 @@ body {
 code {
   font-family: 'Rajdhani';
 }
+
+/*Fonts*/
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('/gwpaw2021/Rajdhani-Regular-Web.woff2') format('woff2'),
+    url('/gwpaw2021/Rajdhani-Regular-Web.woff') format('woff'),
+    url('/gwpaw2021/Rajdhani-Regular-Web.eot') format('eot'),
+    url('/gwpaw2021/Rajdhani-Regular-Web.svg') format('svg'),
+    url('/gwpaw2021/Rajdhani-Regular-Web.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+.Graphik-Regular-Web {
+  font-family: 'Rajdhani';
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}

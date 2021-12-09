@@ -20,11 +20,10 @@ function App() {
      <br></br>
      <div className="app-logo">
      </div>
-     <Router>
+     <Router basename="/gwpaw2021">
          <Routes>
            <Route exact path='/' element={<Main/>}/>
            <Route exact path='/voting' element={<Voting/>}/>
-           <Route exact path='/main' element={<Main/>}/>
            <Route exact path='/logout' element={<Logout/>}/>
          </Routes>
      </Router>

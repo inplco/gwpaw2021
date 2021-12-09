@@ -20,7 +20,9 @@
 }
 
 .logout {
-  margin-left: 1000px;
+  margin-left: 0px;
+  align-items: center;
+  position: 'center';
 }
 
 .raj {
@@ -28,7 +30,7 @@
   margin-left: 10px;
   margin-right: 10px;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h1 {
@@ -80,11 +82,11 @@ h6 {
   align-self: center;
   width: 25%;
   margin-top: 20px;
-  background-color: black;
+  background-color: #0acc00;
   font-size: 20px;
-  color: white;
+  color: black;
   text-align: center;
-  padding: 10px;
+  padding: 15px 15px;
   border: 1px solid white;
   border-radius: 5px;
   font-weight: bold;

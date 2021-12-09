@@ -4,7 +4,7 @@ import './login.css';
 import '../../App.css';
 
 async function loginUser(credentials) {
- return fetch('/login', {
+ return fetch('/login-auth', {
    method: 'POST',
    headers: {
      'Content-Type': 'application/json'
@@ -30,13 +30,14 @@ export default function Login({ setToken }) {
       <div className="app-logo">
       </div>
       <div className="login-wrapper" >
-        <h1 style={{ marginTop: -10, fontFamily: 'palatino' }}>GWPAW 2021 VOTING PAGE</h1>
+        <h1 style={{ marginTop: -10, fontFamily: 'Rajdhani' }}>GWPAW 2021</h1>
+        <h1 style={{ marginTop: -10, fontFamily: 'Rajdhani' }}>VOTING PAGE</h1>
         <p style={{ marginTop: -20 }}>DEC 13-17 2021, HANNOVER</p>
         <form onSubmit={handleSubmit}>
           <label>
             <h5 style={{ fontSize:24, marginTop: 10 }}>USE REGISTRATION TOKEN TO ACCESS THE VOTING PAGE</h5>
-            <p style={{ fontSize:18, marginTop: -35 }}>[e.g. 4PSdUPWo]</p>
-            <p style={{ fontSize:16, marginTop: 10 }}>NOTE: If you have already voted, you won't be able to access the voting page. Shoo!</p>
+            <p style={{ fontSize:18, marginTop: -35, width:600, color: '#FFFFFF' }}>*You can find the token in your inbox sent during registration with the subject "Your registration for the Gravitational Wave Physics and Astronomy Workshop 2021". It looks like "4PSdUPWo", for example.</p>
+            <p style={{ fontSize:16, marginTop: 10, color: 'yellow' }}>NOTE: If you have already voted, you won't be able to access the voting page. Shoo!</p>
             <input type="password" onChange={e => setPassword(e.target.value)} style={{ fontSize: 20 }} />
           </label>
           <div style={{ marginTop: 20, marginBottom: 20 }}>

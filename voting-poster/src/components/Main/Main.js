@@ -4,15 +4,15 @@ import '../../App.css';
 
 const Main = () => (
   <div className="main-container">
-    <h1 className="main-heading" style={{ marginTop: -175, fontFamily: 'palatino' }}>GWPAW 2021 STUDENT POSTER AWARDS</h1>
+    <h1 className="main-heading" style={{ marginTop: -175, fontFamily: 'Rajdhani' }}>GWPAW 2021<br></br>STUDENT POSTER AWARDS</h1>
     <div className="main-btn-section">
       <p style={{ marginTop: -30 }}>DEC 13-17 2021, HANNOVER</p>
-      <p style={{ marginTop: 25, marginLeft: 100, marginRight: 100 }}>You'll need the poster number in order to select your choice. You can view the posters and find their associated numbers <a href="#" target = "_">here</a>. Once you have your poster number ready, continue to voting page.</p>
+      <p style={{ marginTop: 25, marginLeft: 100, marginRight: 100, color: 'yellow' }}>You can view the posters <span style={{ fontWeight:600 }}>here</span>. Once you have decided on your favourite poster, continue to voting page with its title. Note that you can only vote once [duh!] and your registration token will expire [!!!] after you have cast your vote.</p>
       <Link to="/voting" className="show-stats-btn">
         CONTINUE TO VOTING
       </Link>
-      <Link to="/logout" className="show-stats-btn">
-        LOG OUT
+      <Link to="/logout" className="show-stats-btn" style={{ background:'black', color:'white' }}>
+        I'LL VOTE LATER
       </Link>
     </div>
     <div className="footer" style={{ position:'fixed' }}>
