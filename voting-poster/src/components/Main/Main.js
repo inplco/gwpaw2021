@@ -18,7 +18,7 @@ const Main = () => (
     </div>
     <div className="footer" style={{ position:'fixed' }}>
       <div>
-        <img class="thumbnailgit" src="/gwpaw2021/github.png"/><a href="https://github.com/inplco/gwpaw2021" target="_">github.com/inplco/gwpaw2021</a>
+        <img className="thumbnailgit" src="/gwpaw2021/github.png"/><a href="https://github.com/inplco/gwpaw2021" target="_">github.com/inplco/gwpaw2021</a>
       </div>
       <div style={{ marginTop:-13 }}>
         <p>Powered by <a href="http://inpl.one" target = "_">Interplanetary Company</a><sup>TM</sup></p>
