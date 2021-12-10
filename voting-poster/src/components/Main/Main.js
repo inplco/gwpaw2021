@@ -5,10 +5,10 @@ import '../../App.css';
 const Main = () => (
   <div className="main-container">
     <h1 className="main-heading" style={{ marginTop: -125, fontFamily: 'Rajdhani' }}>GWPAW 2021</h1>
-    <h2 style={{ marginTop: -55, fontFamily: 'Rajdhani' }}>STUDENT POSTER AWARDS</h2>
+    <h2 style={{ marginTop: -55, fontFamily: 'Rajdhani' }}>STUDENT-POSTER AWARD</h2>
     <div className="main-btn-section">
-      <p style={{ marginTop: -30 }}>DEC 13-17 2021, HANNOVER</p>
-      <p style={{ marginTop: 25, marginLeft: 100, marginRight: 100, color: 'yellow' }}>You can view the posters <span style={{ fontWeight:600 }}>here</span>. Once you have decided on your favourite poster, continue to voting page with its title. Note that you can only vote once [duh!] and your registration token will expire [!!!] after you have cast your vote.</p>
+      <p style={{ marginTop: -30 }}>DEC 14-17 2021, HANNOVER</p>
+      <p style={{ fontWeight:600, marginTop: 25, marginLeft: 100, marginRight: 100, color: 'yellow' }}>You can view the posters <a href="https://gwpaw2021.aei.mpg.de/access/posters/" target="_" style={{ color:'yellow', fontSize:20, fontWeight:600 }}>here</a>. Once you have decided on your favourite poster, continue to voting page with its title. Note that you can only vote once [duh!] and your registration token will expire after you have cast your vote.</p>
       <Link to="/voting" className="show-stats-btn">
         CONTINUE TO VOTING
       </Link>

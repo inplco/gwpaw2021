@@ -65,7 +65,7 @@
   width: 100%;
   color: white;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 22px;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -74,7 +74,7 @@
 }
 
 .card .front {
-  background: rgba(88, 212, 17, 0.1);
+  background: rgba(153, 112, 0, 0.3);
   border: 1px solid white;
   border-radius: 5px;
   padding-top: 15px;

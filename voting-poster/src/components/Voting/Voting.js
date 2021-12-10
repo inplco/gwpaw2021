@@ -61,9 +61,9 @@ class Voting extends Component {
       <div className="voting-back">
         <h1 className="voting-heading" style={{ fontFamily: 'Rajdhani', marginTop:2 }}>Vote for your favourite Poster</h1>
         <div style={{ marginTop: 10, marginLeft: 200, marginRight: 200 }}>
-        <p style={{ fontSize:18, fontWeight: 500, color: 'yellow' }}>Search [hint: CMD/CTRL + F] for your poster's title below, select it, and then click on 'VOTE' at the top or bottom of the page to cast your vote.<br></br>Once you have voted, you will be automatically logged out and your vote will be permanently registered. You will not be able to login again into this portal once your vote has been registered.</p>
+        <p style={{ fontSize:18, fontWeight: 600, color: 'yellow' }}>Search [hint: CMD/CTRL + F] for your poster's title below, select it, and then click on 'VOTE' at the top or bottom of the page to cast your vote.<br></br>Once you have voted, you will be automatically logged out and your vote will be permanently registered. You will not be able to login again into this portal once your vote has been registered.</p>
         </div>
-        {hasVoted ? (<Link to="/logout" className="show-stats-btn">VOTE</Link>) : (<Link to="/logout" className="show-stats-btn" style={{ background:'#a8a8a8', pointerEvents:'none' }}>VOTE</Link>)}
+        {hasVoted ? (<Link to="/logout" className="show-stats-btn">CAST FINAL VOTE & LOG OUT</Link>) : (<Link to="/logout" className="show-stats-btn" style={{ background:'#a8a8a8', pointerEvents:'none' }}>CAST FINAL VOTE & LOG OUT</Link>)}
         <div className="voting-body" style={{ marginTop:30, marginLeft:100, marginRight:100 }}>
           <div className="voting-main">
             {this.state.cards.map((card) => {
@@ -77,7 +77,7 @@ class Voting extends Component {
                   >
                     <div className="front">{card.name}</div>
                     <div className="back">YOUR CHOICE HAS BEEN NOTED!<span style={{ marginLeft:50, marginRight:50 }}></span>
-                      <button className="refresh-btn" style={{ fontSize: 14, marginTop:-85 }} onClick={()=>this.setState({flipped:null})}>CLICK TO CHOOSE AGAIN</button>
+                      <button className="refresh-btn" style={{ fontSize: 14, marginTop:-85 }} onClick={()=>this.setState({flipped:null})}>CLICK TO MAKE ANOTHER CHOICE</button>
                     </div>
                   </div>
                 </section>
@@ -85,7 +85,7 @@ class Voting extends Component {
             })}
           </div>
         </div>
-        {hasVoted ? (<Link to="/logout" className="show-stats-btn">VOTE</Link>) : (<Link to="/logout" className="show-stats-btn" style={{ background:'#a8a8a8', pointerEvents:'none' }}>VOTE</Link>)}
+        {hasVoted ? (<Link to="/logout" className="show-stats-btn">CAST FINAL VOTE & LOG OUT</Link>) : (<Link to="/logout" className="show-stats-btn" style={{ background:'#a8a8a8', pointerEvents:'none' }}>CAST FINAL VOTE & LOG OUT</Link>)}
         <div style={{ marginTop:60, position:'center' }}><span>_</span>
         </div>
         <Dashboard/>

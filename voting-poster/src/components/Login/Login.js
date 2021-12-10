@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import './login.css';
 import '../../App.css';
+import Modal from "react-modal";
+
+Modal.setAppElement("#root");
 
 async function loginUser(credentials) {
  return fetch('/login-auth', {
@@ -23,6 +26,13 @@ export default function Login({ setToken }) {
     });
     setToken(token);
   }
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  function toggleModal() {
+    setIsOpen(!isOpen);
+  }
+
   return(
     <div className="App" >
     <div className="main-container" style={{ marginTop: 0 }}>
@@ -32,12 +42,27 @@ export default function Login({ setToken }) {
       <div className="login-wrapper" >
         <h1 style={{ marginTop: -30, fontFamily: 'Rajdhani' }}>GWPAW 2021</h1>
         <h2 style={{ marginTop: -40, fontFamily: 'Rajdhani' }}>VOTING PAGE</h2>
-        <p style={{ marginTop: -30 }}>DEC 13-17 2021, HANNOVER</p>
+        <p style={{ marginTop: -30 }}>DEC 14-17 2021, HANNOVER</p>
+        <h5 style={{ fontSize:24, marginTop: 10 }}>USE REGISTRATION TOKEN TO ACCESS THE VOTING PAGE</h5>
+        <button className="button-help" onClick={toggleModal}>where is my registration token?</button>
+        <Modal
+          isOpen={isOpen}
+          onRequestClose={toggleModal}
+          contentLabel=""
+          className="mymodal"
+          overlayClassName="myoverlay"
+          closeTimeoutMS={500}
+        >
+          <div style={{display:'flex'}}>
+            <span style={{ fontSize:16, fontWeight:600, marginTop:10 }}>Your token is in an email with the subject "Your registration for the Gravitational Wave Physics and Astronomy Workshop 2021", sent by <span style={{ color:'blue' }}>gwpaw2021@aei.mpg.de</span> when you first registered on the GWPAW website. You can also request the code again <a style={{ color:'blue',fontSize:17, fontWeight:600 }} href="https://gwpaw2021.aei.mpg.de/access" target="_">here</a>.</span>
+          </div>
+          <div style={{ marginTop:10 }}>
+            <button style={{ background:'black', color:'white', display:'flex', marginLeft:'85%' }} onClick={toggleModal}><span style={{ fontFamily:'Rajdhani', fontSize:16, fontWeight:600 }}>CLOSE</span></button>
+          </div>
+        </Modal>
+        <p style={{ fontSize:16, fontWeight:600, marginTop: 10, color: 'yellow' }}>NOTE: If you have already voted, you won't be able to access the voting page. Shoo!</p>
         <form onSubmit={handleSubmit}>
           <label>
-            <h5 style={{ fontSize:24, marginTop: 10 }}>USE REGISTRATION TOKEN TO ACCESS THE VOTING PAGE</h5>
-            <p style={{ fontSize:18, marginTop: -35, width:600, color: '#FFFFFF' }}>*You can find the token in your inbox sent during registration with the subject "Your registration for the Gravitational Wave Physics and Astronomy Workshop 2021". It looks like "4PSdUPWo", for example.</p>
-            <p style={{ fontSize:16, marginTop: 10, color: 'yellow' }}>NOTE: If you have already voted, you won't be able to access the voting page. Shoo!</p>
             <input type="password" onChange={e => setPassword(e.target.value)} style={{ fontSize: 20 }} />
           </label>
           <div style={{ marginTop: 20, marginBottom: 20 }}>
