@@ -1,92 +1,107 @@
 [
     {
         "id": "1",
-        "name": "Are neutron stars even real?",
+        "name": "Leveraging gravitational-wave memory to distinguish neutron star-black hole binaries from black hole binaries",
         "value": "poster1"
     },
     {
         "id": "2",
-        "name": "Fake news in mainstream science",
+        "name": "Bounding dark charges on binary black holes using gravitational waves",
         "value": "poster2"
     },
     {
         "id": "3",
-        "name": "Defund Astronomy",
+        "name": "Simulating Transient Noise Bursts in LIGO with Generative Adversarial Networks",
         "value": "poster3"
     },
     {
         "id": "4",
-        "name": "10 reasons why Earth is flat",
+        "name": "Efficient Template Placement Algorithm for Compact Binary Coalescence Searches in Gravitational Wave Data",
         "value": "poster4"
     },
     {
         "id": "5",
-        "name": "Anti-flat Earth theory: all you need to know",
+        "name": "Searching for axion dark matter halo with gravitational-wave observations",
         "value": "poster5"
     },
     {
         "id": "6",
-        "name": "This is like the best conference ever",
+        "name": "Einstein@Home All-sky Search for Continuous Gravitational Waves in LIGO O2 Public Data",
         "value": "poster6"
     },
     {
         "id": "7",
-        "name": "Demographics of Karens and Chads in Academia",
+        "name": "Leading-order nonlinear GWs from reheating magnetogeneses",
         "value": "poster7"
     },
     {
         "id": "8",
-        "name": "Cancel Wormholes and spacetime",
+        "name": "Overlapping gravitational wave signals in second generation interferometers",
         "value": "poster8"
     },
     {
         "id": "9",
-        "name": "Blackhole no-arms or legs theory",
+        "name": "The relevance of black-hole kicks in the context of waveform modelling",
         "value": "poster9"
     },
     {
         "id": "10",
-        "name": "Send the 5-dimensional immigrants back!",
+        "name": "Testing General Relativity with gravitational waves higher-order modes",
         "value": "poster10"
     },
     {
         "id": "11",
-        "name": "How not to run a government: a guide by you-know-who",
+        "name": "On the use of CHIME to detect long-duration radio transients from binary neutron star mergers",
         "value": "poster11"
     },
     {
         "id": "12",
-        "name": "Pasta Carbonara doesn't have cream",
+        "name": "Constraints on quark matter from multi-messenger observations of hybrid stars",
         "value": "poster12"
     },
     {
         "id": "13",
-        "name": "I’m not insane. My mother had me tested",
+        "name": "High-energy counterparts of binary neutron star mergers detected with the third generation of gravitational-wave detectors",
         "value": "poster13"
     },
     {
         "id": "14",
-        "name": "Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes",
+        "name": "Cross-correlating primary anisotropies in the Astrophysical Gravitational Wave Background intensity with the Large Scale Structure",
         "value": "poster14"
     },
     {
         "id": "15",
-        "name": "I am running out of silly things to write",
+        "name": "A joint GW\u2013GRB Bayesian study for low-luminosity short GRB population",
         "value": "poster15"
     },
     {
         "id": "16",
-        "name": "Clothes make the man. Naked people have little or no influence in society",
+        "name": "Using the Q-transform to improve the sensitivity of compact binary merger searches",
         "value": "poster16"
     },
     {
         "id": "17",
-        "name": "Ned, I would love to stand here and talk with you—but I’m not going to",
+        "name": "Stochastic gravitational-wave background as a tool to investigate multi-channel astrophysical and primordial black-hole mergers",
         "value": "poster17"
     },
     {
         "id": "18",
-        "name": "I walk around like everything’s fine, but deep down, inside my shoe, my sock is sliding off",
+        "name": "Using gravitational waves to distinguish between neutron stars and black holes in compact binary mergers",
         "value": "poster18"
+    },
+    {
+        "id": "19",
+        "name": "A fast and precise methodology to search for and analyse strongly lensed gravitational-wave events",
+        "value": "poster19"
+    },
+    {
+        "id": "20",
+        "name": "Model-Independent test of Scalar-Tensor gravity theory by reconstructing scalar mode of GW170817",
+        "value": "poster20"
+    },
+    {
+        "id": "21",
+        "name": "Probing multiverse using gravitational wave observations",
+        "value": "poster21"
     }
 ]

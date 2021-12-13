@@ -96,6 +96,7 @@ h6 {
   border-radius: 5px;
   font-weight: 600;
   text-decoration: none;
+  font-family: 'Rajdhani';
 }
 
 .show-stats-btn:hover {
@@ -104,6 +105,34 @@ h6 {
   border: 1px solid black;
   text-decoration: none;
 }
+
+.hovertext {
+  position: relative;
+}
+
+.hovertext:before {
+  content: 'this is final';
+  visibility: hidden;
+  opacity: 0;
+  width: 140px;
+  background-color: red;
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  transition: opacity 0s;
+
+  position: absolute;
+  z-index: 1;
+  left: 70%;
+  top: -70%;
+}
+
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+
 .article{
   margin-top: 20px;
   font-size: 20px;
@@ -217,14 +246,14 @@ h6 {
   font-family: 'Rajdhani';
 	zoom: 1;
 	color: #a6d1ff;
-	padding: 3px 3px;
+	padding: 3px 3px 3px 3px;
 	border: 2px solid #a6d1ff;
-	border-radius: 20px;
+	border-radius: 12px;
 	font-size: 16px;
   font-weight: 600;
 	background: transparent;
   margin: -30px 30px 20px 30px;
-  width: 300px;
+  width: 175px;
 }
 .button-help:hover {
   background: white;
@@ -239,7 +268,7 @@ h6 {
   transform: translate(-50%, -50%);
 
   border: 2px solid #cccccc;
-  background: #ffffff;
+  background: #d8e2f2;
   overflow: auto;
   border-radius: 4px;
   outline: none;
@@ -253,4 +282,14 @@ h6 {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.25);
+}
+
+.blink {
+  animation: blinker 3s ease-in-out infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
