@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and [Ably](https://ably.com/) for [GWPAW 2021](https://gwpaw2021.aei.mpg.de/), 14-17 December 2021.
+This project was bootstrapped with [Node.js](https://nodejs.org/en/), [Create React App](https://github.com/facebook/create-react-app) and [Ably](https://ably.com/) for [GWPAW 2021](https://gwpaw2021.aei.mpg.de/), 14-17 December 2021.
 
 ## Available Scripts
 
