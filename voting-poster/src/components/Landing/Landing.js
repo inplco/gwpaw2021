@@ -17,7 +17,8 @@ export default function Landing() {
   const [password, setPassword] = useState();
   const [isOpen, setIsOpen] = useState(false);
 
-  const authenticate = async () => {
+  const authenticate = async e => {
+    e.preventDefault();
     try {
       console.log('talking to gatekeeper');
       const res = await axios.get('/authenticate', { params: { email: 'user', password: password } });
@@ -26,7 +27,7 @@ export default function Landing() {
         setType(res.data.type);
       } else { console.log('cannot recognise you mate'); }
     } catch (e) {
-      console.log('error 503');
+      console.log(e);
     }
   };
 
@@ -78,9 +79,9 @@ export default function Landing() {
               <button style={{ background:'black', color:'white', display:'flex', marginLeft:'85%' }} onClick={toggleModal}><span style={{ fontFamily:'Rajdhani', fontSize:16, fontWeight:600 }}>CLOSE</span></button>
             </div>
           </Modal>
-          <p style={{ fontSize:16, fontWeight:600, marginTop: 10, color: 'yellow' }}>NOTE: If you have already voted, you won't be able to access the voting page. Shoo!</p>
-          <p style={{ fontSize:16, fontWeight:600, marginTop: -20, color: '#fff700' }}><span className="blink">[!!!]</span> If you fail to login, please try in Chrome or Firefox browsers. Safari and iOS native browsers have reported issues.</p>
-          <form onSubmit={authenticate}>
+          <p style={{ fontSize:16, fontWeight:600, marginTop: 10, color: 'white' }}>NOTE: If you have already voted, you won't be able to access the voting page. Shoo!</p>
+          <p style={{ fontSize:16, fontWeight:600, marginTop: -10, color: 'yellow' }}>HELP DESK: If you haven't yet voted and your token doesn't work, please send an email to inplco@protonmail.com</p>
+          <form onSubmit={authenticate} style={{ marginTop: -10 }}>
             <label>
               {/*<input placeholder="registered email" type="text" onChange={e => setUsername(e.target.value)} style={{ fontFamily: 'Rajdhani', fontSize: 16 }} />
               <br></br>*/}
@@ -94,6 +95,8 @@ export default function Landing() {
         </div>
         <div className="footer" style={{ position:'fixed' }}>
           <div>
+            <img alt="logo" className="thumbnailjs" src="/gwpaw2021/nodejs.svg"/>
+            <img alt="logo" className="thumbnailjs" src="/gwpaw2021/reactjs.png"/>
             <img alt="logo" className="thumbnailgit" src="/gwpaw2021/github.png"/><a href="https://github.com/inplco/gwpaw2021" target="_">github.com/inplco/gwpaw2021</a>
           </div>
           <div style={{ marginTop:-13 }}>

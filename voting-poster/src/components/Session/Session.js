@@ -56,6 +56,8 @@ export default function Session() {
        <br></br><br></br>
        <div className="footer" style={{ position:'fixed' }}>
          <div>
+           <img alt="logo" className="thumbnailjs" src="/gwpaw2021/nodejs.svg"/>
+           <img alt="logo" className="thumbnailjs" src="/gwpaw2021/reactjs.png"/>
            <img alt="logo" className="thumbnailgit" src="/gwpaw2021/github.png"/><a href="https://github.com/inplco/gwpaw2021" target="_">github.com/inplco/gwpaw2021</a>
          </div>
          <div style={{ marginTop:-13 }}>

@@ -22,8 +22,8 @@ class Dashboard extends Component {
     thing;
     for(var y = 0; y < names.length; y++){
       thing = {};
-      for(var i = 0; i < count.length; i++){
-          thing[names[y]] = count[i];
+      for(var k = 0; k < count.length; k++){
+          thing[names[y]] = count[k];
         }
         newarray.push(thing)
       }

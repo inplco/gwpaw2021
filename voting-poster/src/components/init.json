@@ -1,128 +1,344 @@
 [
     {
         "id": "1",
-        "name": "Leveraging gravitational-wave memory to distinguish neutron star-black hole binaries from black hole binaries",
+        "name": "Characterizing the observation bias in gravitational-wave detections and finding structured population properties",
         "value": "poster1",
         "votes": "0"
     },
     {
         "id": "2",
-        "name": "Bounding dark charges on binary black holes using gravitational waves",
+        "name": "Detectability of continuous gravitational waves from galactic neutron stars",
         "value": "poster2",
         "votes": "0"
     },
     {
         "id": "3",
-        "name": "Simulating Transient Noise Bursts in LIGO with Generative Adversarial Networks",
+        "name": "Developing a Neutrino-Triggered Detection Pipeline for Identifying Sub-100TeV Neutrinos Coincident with Gravitational Waves from Compact Binary Mergers",
         "value": "poster3",
         "votes": "0"
     },
     {
         "id": "4",
-        "name": "Efficient Template Placement Algorithm for Compact Binary Coalescence Searches in Gravitational Wave Data",
+        "name": "Microscopic constraints on the Kerr geometry of GW150914",
         "value": "poster4",
         "votes": "0"
     },
     {
         "id": "5",
-        "name": "Searching for axion dark matter halo with gravitational-wave observations",
+        "name": "Comprehension of jet physics from the analysis of the Gamma-Ray Burst afterglow parameters distributions",
         "value": "poster5",
         "votes": "0"
     },
     {
         "id": "6",
-        "name": "Einstein@Home All-sky Search for Continuous Gravitational Waves in LIGO O2 Public Data",
+        "name": "Rapid Online Estimation of Astrophysical Source Category and Compact Binary Parameters",
         "value": "poster6",
         "votes": "0"
     },
     {
         "id": "7",
-        "name": "Leading-order nonlinear GWs from reheating magnetogeneses",
+        "name": "Incorporating information from LIGO data quality streams into the PyCBC search for gravitational waves",
         "value": "poster7",
         "votes": "0"
     },
     {
         "id": "8",
-        "name": "Overlapping gravitational wave signals in second generation interferometers",
+        "name": "All-sky, all-frequency(ASAF) directional search for an anisotropic Stochastic Gravitational Wave Background (SGWB)",
         "value": "poster8",
         "votes": "0"
     },
     {
         "id": "9",
-        "name": "The relevance of black-hole kicks in the context of waveform modelling",
+        "name": "Measuring the properties of f-mode oscillations of a protoneutron star by third generation gravitation-wave detectors",
         "value": "poster9",
         "votes": "0"
     },
     {
         "id": "10",
-        "name": "Testing General Relativity with gravitational waves higher-order modes",
+        "name": "Leveraging gravitational-wave memory to distinguish neutron star-black hole binaries from black hole binaries",
         "value": "poster10",
         "votes": "0"
     },
     {
         "id": "11",
-        "name": "On the use of CHIME to detect long-duration radio transients from binary neutron star mergers",
+        "name": "A parameterized template based search for gravitational wave signals beyond general relativity",
         "value": "poster11",
         "votes": "0"
     },
     {
         "id": "12",
-        "name": "Constraints on quark matter from multi-messenger observations of hybrid stars",
+        "name": "Searching for joint gravitational-wave and high energy neutrino events with LLAMA",
         "value": "poster12",
         "votes": "0"
     },
     {
         "id": "13",
-        "name": "High-energy counterparts of binary neutron star mergers detected with the third generation of gravitational-wave detectors",
+        "name": "Bounding dark charges on binary black holes using gravitational waves",
         "value": "poster13",
         "votes": "0"
     },
     {
         "id": "14",
-        "name": "Cross-correlating primary anisotropies in the Astrophysical Gravitational Wave Background intensity with the Large Scale Structure",
+        "name": "Simulating Transient Noise Bursts in LIGO with Generative Adversarial Networks",
         "value": "poster14",
         "votes": "0"
     },
     {
         "id": "15",
-        "name": "A joint GW\u2013GRB Bayesian study for low-luminosity short GRB population",
+        "name": "New searches for continuous gravitational waves from seven fast pulsars",
         "value": "poster15",
         "votes": "0"
     },
     {
         "id": "16",
-        "name": "Using the Q-transform to improve the sensitivity of compact binary merger searches",
+        "name": "Multi-Messenger Models for Supermassive Binary Black Holes and their Mergers",
         "value": "poster16",
         "votes": "0"
     },
     {
         "id": "17",
-        "name": "Stochastic gravitational-wave background as a tool to investigate multi-channel astrophysical and primordial black-hole mergers",
+        "name": "ALBUS : Anomaly detector for Long-duration BUrst Searches",
         "value": "poster17",
         "votes": "0"
     },
     {
         "id": "18",
-        "name": "Using gravitational waves to distinguish between neutron stars and black holes in compact binary mergers",
+        "name": "CNN for inspiral detection: going down in Frequency",
         "value": "poster18",
         "votes": "0"
     },
     {
         "id": "19",
-        "name": "A fast and precise methodology to search for and analyse strongly lensed gravitational-wave events",
+        "name": "Ameliorating glitches in gravitational-wave searches for intermediate-mass black holes",
         "value": "poster19",
         "votes": "0"
     },
     {
         "id": "20",
-        "name": "Model-Independent test of Scalar-Tensor gravity theory by reconstructing scalar mode of GW170817",
+        "name": "Is GW190521 precessing?",
         "value": "poster20",
         "votes": "0"
     },
     {
         "id": "21",
-        "name": "Probing multiverse using gravitational wave observations",
+        "name": "Efficient Template Placement Algorithm for Compact Binary Coalescence Searches in Gravitational Wave Data",
         "value": "poster21",
+        "votes": "0"
+    },
+    {
+        "id": "22",
+        "name": "Improving the background estimation technique in the GstLAL inspiral pipeline with the time-reversed template bank",
+        "value": "poster22",
+        "votes": "0"
+    },
+    {
+        "id": "23",
+        "name": "Searching for axion dark matter halo with gravitational-wave observations",
+        "value": "poster23",
+        "votes": "0"
+    },
+    {
+        "id": "24",
+        "name": "Model Agnostic Bayesian Framework to Probe Generic Gravitational-wave Polarizations",
+        "value": "poster24",
+        "votes": "0"
+    },
+    {
+        "id": "25",
+        "name": "Astrophysically-informed Analysis of Strongly-Lensed Gravitational-Wave Transients",
+        "value": "poster25",
+        "votes": "0"
+    },
+    {
+        "id": "26",
+        "name": "Improving the sensitivity of the PyCBC search using auto-tuned chi-squared tests",
+        "value": "poster26",
+        "votes": "0"
+    },
+    {
+        "id": "27",
+        "name": "Detecting long-duration gravitational wave signals",
+        "value": "poster27",
+        "votes": "0"
+    },
+    {
+        "id": "28",
+        "name": "A multimessenger analysis of black hole - neutron star mergers",
+        "value": "poster28",
+        "votes": "0"
+    },
+    {
+        "id": "29",
+        "name": "Einstein@Home All-sky Search for Continuous Gravitational Waves in LIGO O2 Public Data",
+        "value": "poster29",
+        "votes": "0"
+    },
+    {
+        "id": "30",
+        "name": "Leading-order nonlinear GWs from reheating magnetogeneses",
+        "value": "poster30",
+        "votes": "0"
+    },
+    {
+        "id": "31",
+        "name": "Angular Resolution of the Spherical Harmonics Decomposition Search for the Stochastic Gravitational-Wave Background",
+        "value": "poster31",
+        "votes": "0"
+    },
+    {
+        "id": "32",
+        "name": "Overlapping gravitational wave signals in second generation interferometers",
+        "value": "poster32",
+        "votes": "0"
+    },
+    {
+        "id": "33",
+        "name": "Constraining Effective Field Theory Extensions of General Relativity with Gravitational Waves",
+        "value": "poster33",
+        "votes": "0"
+    },
+    {
+        "id": "34",
+        "name": "The relevance of black-hole kicks in the context of waveform modelling",
+        "value": "poster34",
+        "votes": "0"
+    },
+    {
+        "id": "35",
+        "name": "Testing General Relativity with gravitational waves higher-order modes",
+        "value": "poster35",
+        "votes": "0"
+    },
+    {
+        "id": "36",
+        "name": "Meshfree interpolation of the likelihood for fast Bayesian inference of compact binary coalescences",
+        "value": "poster36",
+        "votes": "0"
+    },
+    {
+        "id": "37",
+        "name": "On the use of CHIME to detect long-duration radio transients from binary neutron star mergers",
+        "value": "poster37",
+        "votes": "0"
+    },
+    {
+        "id": "38",
+        "name": "Constraints on quark matter from multi-messenger observations of hybrid stars",
+        "value": "poster38",
+        "votes": "0"
+    },
+    {
+        "id": "39",
+        "name": "High-energy counterparts of binary neutron star mergers detected with the third generation of gravitational-wave detectors",
+        "value": "poster39",
+        "votes": "0"
+    },
+    {
+        "id": "40",
+        "name": "Cross-correlating primary anisotropies in the Astrophysical Gravitational Wave Background intensity with the Large Scale Structure",
+        "value": "poster40",
+        "votes": "0"
+    },
+    {
+        "id": "41",
+        "name": "A joint GW\u2013GRB Bayesian study for low-luminosity short GRB population",
+        "value": "poster41",
+        "votes": "0"
+    },
+    {
+        "id": "42",
+        "name": "Sub-threshold search for strongly lensed gravitational-wave events in the first half of LIGO-Virgo's third observing run",
+        "value": "poster42",
+        "votes": "0"
+    },
+    {
+        "id": "43",
+        "name": "Ringing of rotating black holes in higher-derivative gravity",
+        "value": "poster43",
+        "votes": "0"
+    },
+    {
+        "id": "44",
+        "name": "Gravitational-wave Asteroseismology with f-modes from Neutron Star Binaries at the Merger Phase with MPIAMR-GRMHD spacetime dynamical simulation code: Gmunu",
+        "value": "poster44",
+        "votes": "0"
+    },
+    {
+        "id": "45",
+        "name": "Cross-correlating the astrophysical stochastic gravitational wave background with cosmic fields",
+        "value": "poster45",
+        "votes": "0"
+    },
+    {
+        "id": "46",
+        "name": "The 5n-vector ensemble method for detecting gravitational waves from known pulsars",
+        "value": "poster46",
+        "votes": "0"
+    },
+    {
+        "id": "47",
+        "name": "Hierarchical approach to matched filtering using a reduced basis",
+        "value": "poster47",
+        "votes": "0"
+    },
+    {
+        "id": "48",
+        "name": "Using the Q-transform to improve the sensitivity of compact binary merger searches",
+        "value": "poster48",
+        "votes": "0"
+    },
+    {
+        "id": "49",
+        "name": "Stochastic gravitational-wave background as a tool to investigate multi-channel astrophysical and primordial black-hole mergers",
+        "value": "poster49",
+        "votes": "0"
+    },
+    {
+        "id": "50",
+        "name": "Tidal response from scattering and the role of analytic continuation",
+        "value": "poster50",
+        "votes": "0"
+    },
+    {
+        "id": "51",
+        "name": "Using gravitational waves to distinguish between neutron stars and black holes in compact binary mergers",
+        "value": "poster51",
+        "votes": "0"
+    },
+    {
+        "id": "52",
+        "name": "A fast and precise methodology to search for and analyse strongly lensed gravitational-wave events",
+        "value": "poster52",
+        "votes": "0"
+    },
+    {
+        "id": "53",
+        "name": "Exploring compact binary populations with the EinsteinTelescope",
+        "value": "poster53",
+        "votes": "0"
+    },
+    {
+        "id": "54",
+        "name": "Model-Independent test of Scalar-Tensor gravity theory by reconstructing scalar mode of GW170817",
+        "value": "poster54",
+        "votes": "0"
+    },
+    {
+        "id": "55",
+        "name": "Rapid Identification of Strongly Lensed Gravitational Wave Signals with Machine Learning",
+        "value": "poster55",
+        "votes": "0"
+    },
+    {
+        "id": "56",
+        "name": "Probing multiverse using gravitational wave observations",
+        "value": "poster56",
+        "votes": "0"
+    },
+    {
+        "id": "57",
+        "name": "Probing Gravitational Waves from Pulsars in Brans-Dicke theory",
+        "value": "poster57",
         "votes": "0"
     }
 ]
