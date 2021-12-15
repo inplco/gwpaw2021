@@ -79,7 +79,7 @@ export default function Landing() {
             </div>
           </Modal>
           <p style={{ fontSize:16, fontWeight:600, marginTop: 10, color: 'yellow' }}>NOTE: If you have already voted, you won't be able to access the voting page. Shoo!</p>
-
+          <p style={{ fontSize:16, fontWeight:600, marginTop: -20, color: '#fff700' }}><span className="blink">[!!!]</span> If you fail to login, please try in Chrome or Firefox browsers. Safari and iOS native browsers have reported issues.</p>
           <form onSubmit={authenticate}>
             <label>
               {/*<input placeholder="registered email" type="text" onChange={e => setUsername(e.target.value)} style={{ fontFamily: 'Rajdhani', fontSize: 16 }} />

@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import {createBrowserHistory} from 'history';
 import axios from 'axios';
-import Dashboard from '../Dashboard/Dashboard';
 
 const browserHistory = createBrowserHistory();
 
@@ -15,8 +14,8 @@ function ScrollToTopOnMount() {
 
 const deleteCookie = async () => {
   try {
-    console.log('signing vote and logging out');
-    await axios.get('/sign-vote');
+    console.log('logging out -  you can vote later');
+    await axios.get('/clear-cookie');
     console.log('logged out!');
     const type = 'auth';
   } catch (e) {
@@ -39,19 +38,21 @@ function ClearLocal() {
   browserHistory.push({ pathname: '/gwpaw2021/logout' });
   setTimeout(function() {
     window.location.replace('http://inpl.one');
-  }, 5000);
+  }, 3000);
   return null;
 }
 
-export default function Logout() {
+export default function Session() {
+
   return (
     <div>
       <ScrollToTopOnMount />
+      <ClearLocal />
       <div className="app-logo"></div>
       <div className="main-container">
        <h1 className="main-heading" style={{ marginTop: -10, fontWeight: 500, fontSize: 24 }}>YOUR SESSION IS CLOSED! THANK YOU!</h1>
        <a style={{ color:'#FFFFFF' }} href="/">HOME</a>
-       <p style={{ color:'#4afcff', fontSize:14, marginTop:-2 }} href="/">[auto-redirect in 3-5 seconds]</p>
+       <p style={{ color:'#4afcff', fontSize:14, marginTop:-4 }} href="/">[auto-redirect in 3 seconds]</p>
        <br></br><br></br>
        <div className="footer" style={{ position:'fixed' }}>
          <div>
@@ -62,7 +63,6 @@ export default function Logout() {
          </div>
        </div>
       </div>
-      <ClearLocal />
     </div>
   )
 }

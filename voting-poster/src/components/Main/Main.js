@@ -5,8 +5,6 @@ import axios from 'axios';
 
 export default function Main() {
   const deleteCookie = async () => {
-    localStorage.clear();
-    sessionStorage.clear();
     try {
       console.log('logging out');
       await axios.get('/clear-cookie');
@@ -27,7 +25,7 @@ export default function Main() {
       <Link to="/voting" className="show-stats-btn">
         CONTINUE TO VOTING
       </Link>
-      <Link to="/logout" className="show-stats-btn" style={{ background:'black', color:'white' }} onClick={deleteCookie}>
+      <Link to="/session" className="show-stats-btn" style={{ background:'black', color:'white' }} onClick={deleteCookie}>
         I'LL VOTE LATER
       </Link>
     </div>

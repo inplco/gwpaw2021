@@ -2,11 +2,8 @@ import React, { Component } from "react";
 import * as Ably from "ably";
 import { Doughnut } from "react-chartjs-2";
 import '../../App.css';
-
-/*
+import '../Voting/voting.css';
 import {Chart, ArcElement} from 'chart.js';
-Chart.register(ArcElement);
-*/
 
 let realTime = null;
 let myVotingChannel = null;
@@ -14,23 +11,31 @@ let myVotingChannel = null;
 class Dashboard extends Component {
   constructor(){
     super();
+    const posters = require("../init.json");
+    var names = [];
+    var count = [];
+    for (var i=0; i < posters.length; i++) {
+      names.push(posters[i].value)
+      count.push(posters[i].votes)
+      }
+    var newarray = [],
+    thing;
+    for(var y = 0; y < names.length; y++){
+      thing = {};
+      for(var i = 0; i < count.length; i++){
+          thing[names[y]] = count[i];
+        }
+        newarray.push(thing)
+      }
+
     this.state = {
-      votes: require("../init.json")
+      votes: newarray
     };
+    console.log(this.state);
   }
-  /*
-  state = {
-    votes: {
-      barcelona: 0,
-      realMadrid: 0,
-      juventus: 0,
-    },
-  };
-  */
   componentDidMount() {
     realTime = new Ably.Realtime({ authUrl: "/subscribe" });
     realTime.connection.once("connected", () => {
-      // create the channel object
       myVotingChannel = realTime.channels.get("voting-poster");
       myVotingChannel.subscribe("vote", (trigger) => {
         this.setState({
@@ -48,15 +53,15 @@ class Dashboard extends Component {
   }
   render() {
     const data = {
-      labels: this.state.votes,
+      labels: this.state.votes.value,
       datasets: [
         {
           barPercentage: 1,
-          data: this.state.votes,
+          data: this.state.votes.votes,
         },
       ],
     };
-    /*
+
     const options = {
       title: {
         display: true,
@@ -72,8 +77,6 @@ class Dashboard extends Component {
       }
     };
     return <Doughnut className="graph" data={data} options={options} />;
-    */
-    return null;
   }
 }
 

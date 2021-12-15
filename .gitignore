@@ -8,6 +8,7 @@
 
 # production
 /build
+/src/components/init.json
 
 # misc
 .DS_Store
