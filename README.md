@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting Started
 
 Built with [Node.js](https://nodejs.org/en/) and [React.js](https://github.com/facebook/create-react-app) for [GWPAW 2021](https://gwpaw2021.aei.mpg.de/), 14-17 December 2021.
 
