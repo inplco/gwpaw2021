@@ -1,6 +1,6 @@
 # Getting Started
 
-Built with [Node.js](https://nodejs.org/en/) and [React.js](https://github.com/facebook/create-react-app) for [GWPAW 2021](https://gwpaw2021.aei.mpg.de/), 14-17 December 2021.
+Built with [Node.js](https://nodejs.org/en/) and [React.js](https://github.com/facebook/create-react-app) for [GWPAW 2021](https://gwpaw2021.aei.mpg.de/), 14-17 December 2021. This is the React.js front-end. Node.js back-end hook can be found [here](https://github.com/inplco/login-auth).
 
 ## Available Scripts
 
