@@ -46,6 +46,7 @@ function ClearLocal() {
 export default function Logout() {
   return (
     <div>
+      <ClearLocal />
       <ScrollToTopOnMount />
       <div className="app-logo"></div>
       <div className="main-container">
@@ -64,7 +65,6 @@ export default function Logout() {
          </div>
        </div>
       </div>
-      <ClearLocal />
     </div>
   )
 }

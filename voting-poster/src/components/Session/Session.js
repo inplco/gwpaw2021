@@ -52,7 +52,7 @@ export default function Session() {
       <div className="main-container">
        <h1 className="main-heading" style={{ marginTop: -10, fontWeight: 500, fontSize: 24 }}>YOUR SESSION IS CLOSED! THANK YOU!</h1>
        <a style={{ color:'#FFFFFF' }} href="/">HOME</a>
-       <p style={{ color:'#4afcff', fontSize:14, marginTop:-4 }} href="/">[auto-redirect in 3 seconds]</p>
+       <p style={{ color:'#4afcff', fontSize:14, marginTop:-4 }} href="/">[auto-redirect in 3-5 seconds]</p>
        <br></br><br></br>
        <div className="footer" style={{ position:'fixed' }}>
          <div>

@@ -50,8 +50,10 @@ class Voting extends Component {
 
   voteHandler = (card) => {
     const regVote = async () => {
-      let voteCount = card.votes + 1;
-      let resDump = await axios.get('/read-vote', { params : { name: card.value, vote: voteCount } });
+      let resDump = await axios.get('/read-vote', { params : { name: card.value, vote: 1 } });
+      if (resDump.data.type === 'auth'){
+        window.history.push('/');
+      }
       }
     regVote();
     myVotingChannel.publish("vote", card.value, (err) => {
